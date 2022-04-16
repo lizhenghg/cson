@@ -43,7 +43,7 @@ public class JsonTest {
         @Override
         public String toString() {
             return "TypeInner[age=" + this.getAge() +
-                    ", name=" + this.getName() + ", numbers=" + this.getNumbers();
+                    ", name=" + this.getName() + ", numbers=" + this.getNumbers() + "]";
         }
     }
 
@@ -75,7 +75,7 @@ public class JsonTest {
         // json String转换为对象. start ------>
         String jsonStr = "{\"age\":20,\"name\":\"world\",\"numbers\":[1,2,3]}";
         TypeInner typeInner = cson.fromJson(jsonStr, TypeInner.class);
-        // 打印：TypeInner[age=20, name=world, numbers=[1, 2, 3]
+        // 打印：TypeInner[age=20, name=world, numbers=[1, 2, 3]]
         System.out.println(typeInner);
         // <------ end. json String转换为对象.
 
